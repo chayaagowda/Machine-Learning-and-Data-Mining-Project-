@@ -1,0 +1,6 @@
+Dataset Name: University Student Dropout Dataset
+Records: 464,739
+Students: 39,364
+Features: 77
+Years: 3 Academic Years
+Target: Dropout (1/0)
