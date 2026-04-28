@@ -157,3 +157,43 @@ Generate human-readable rules that can support institutional decision-making.
 ---
 
 ## 🛠️ Project Structure
+
+docs/
+├── introduction.md 
+├── dataset_description.md 
+└── research_problems.md 
+
+data/
+└── dataset_info.txt 
+
+images/
+└── project_flow.png 
+
+
+---
+
+## 🚀 Expected Outcomes
+
+- Accurate prediction of student dropout using classification models  
+- Identification of key factors influencing dropout  
+- Discovery of meaningful student groups through clustering  
+- Extraction of actionable patterns using association rules  
+- Data-driven insights for improving student retention strategies  
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how data mining techniques can be used not only to predict student dropout but also to understand the underlying causes. By combining classification, clustering, and association rule mining, the project provides both predictive power and interpretability, enabling institutions to take proactive and informed actions.
+
+---
+
+## 👥 Team Members
+
+- Chaya Sri K  
+- Joshua Godwin  
+- Bharath Raahul Murugesan  
+- Bansari Yadav  
+
+---
+
