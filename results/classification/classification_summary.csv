@@ -1,0 +1,6 @@
+Model,Accuracy,Macro_F1,Weighted_F1,ROC_AUC
+Logistic Regression,0.9495,0.7987,0.9508,0.8698
+SVM,0.9075,0.7291,0.921,0.8849
+Decision Tree,0.8865,0.7061,0.9071,0.8806
+Random Forest,0.834,0.6319,0.87,0.8896
+KNN,0.7955,0.5858,0.8431,0.7771
