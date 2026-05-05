@@ -1,0 +1,21 @@
+antecedents_str,consequents_str,support,confidence,lift
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_events=Low, total_pft_visits=Low, total_resource_events=Low",Dropout=Yes,0.0147,0.1038,1.6286
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_pft_events=Low, total_pft_visits=Low, total_resource_events=Low",Dropout=Yes,0.0147,0.1038,1.6286
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_pft_events=Low, total_resource_events=Low",Dropout=Yes,0.0147,0.1037,1.6281
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_events=Low, total_resource_events=Low",Dropout=Yes,0.0147,0.1037,1.6281
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_pft_visits=Low, total_resource_events=Low",Dropout=Yes,0.0147,0.1037,1.6277
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_visits=Low, total_resource_events=Low",Dropout=Yes,0.0147,0.1037,1.6274
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_pft_events=Low, total_pft_visits=Low",Dropout=Yes,0.0148,0.1037,1.6274
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_events=Low, total_pft_visits=Low",Dropout=Yes,0.0148,0.1037,1.6274
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_resource_events=Low",Dropout=Yes,0.0147,0.1037,1.627
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_events=Low",Dropout=Yes,0.0148,0.1037,1.6269
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_pft_events=Low",Dropout=Yes,0.0148,0.1037,1.6269
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_resource_events=Low",Dropout=Yes,0.0147,0.1037,1.6268
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_pft_visits=Low",Dropout=Yes,0.0148,0.1036,1.6262
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_visits=Low",Dropout=Yes,0.0148,0.1036,1.626
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low",Dropout=Yes,0.0148,0.1036,1.6255
+"desplazado_hash=A, nota10_hash=Low, total_n_wifi_days=Low",Dropout=Yes,0.0148,0.1036,1.6253
+"nota10_hash=Low, total_n_wifi_days=Low, total_pft_events=Low, total_pft_visits=Low, total_resource_events=Low",Dropout=Yes,0.0204,0.1034,1.6224
+"nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_pft_events=Low, total_pft_visits=Low, total_resource_events=Low",Dropout=Yes,0.0204,0.1034,1.6224
+"nota10_hash=Low, total_n_wifi_days=Low, total_pft_assignment_submissions=Low, total_pft_events=Low, total_resource_events=Low",Dropout=Yes,0.0204,0.1034,1.6221
+"nota10_hash=Low, total_n_wifi_days=Low, total_pft_events=Low, total_resource_events=Low",Dropout=Yes,0.0204,0.1034,1.6221

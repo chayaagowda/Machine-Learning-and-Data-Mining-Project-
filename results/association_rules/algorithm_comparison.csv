@@ -1,0 +1,3 @@
+Algorithm,n_itemsets,runtime_sec
+Apriori,17430,1.829
+FP-Growth,17430,0.282

@@ -4,9 +4,10 @@ The dataset used in this project is the **University Student Dropout: A Longitud
 
 ### Source
 
-- Provider: Universitat Politècnica de València (UPV), Spain  
-- Publicly available through academic/UCI repository sources  
-- Published for educational analytics and machine learning research
+- Provider: Universitat Politècnica de València (UPV), Spain
+- Published October 2025 in MDPI *Data* (open access, CC BY 4.0)
+- Paper DOI: https://doi.org/10.3390/data10100162
+- Title: *University Student Dropout: A Longitudinal Dataset of Demographic, Socioeconomic, and Academic Indicators*
 
 ### Dataset Size
 

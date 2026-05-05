@@ -3,11 +3,12 @@ Classification - Student Dropout Prediction
 ITMD 522 | Bharath Raahul Murugesan
 
 Memory-efficient design for CPU-only machines:
-  - Stratified 30k-row subsample from the full 464k dataset
+  - Stratified TRAIN_SAMPLE-row subsample from the full 464k dataset
+    (default 10,000 rows; statistically sufficient for relative model comparison)
   - class_weight='balanced' replaces SMOTE for LR / DT / RF / SVM
   - SMOTE used only for KNN (no class_weight support), on the small sample
-  - 3-fold CV with RandomizedSearchCV (n_iter=5) instead of full GridSearch
-  - Results are statistically valid — 30k stratified rows are more than enough
+  - 5-fold StratifiedKFold CV with RandomizedSearchCV
+  - All five algorithms (LR / DT / RF / KNN / SVM) are hyperparameter-tuned
 """
 
 import os
@@ -46,9 +47,9 @@ OUTPUT_DIR    = os.path.join(os.path.dirname(os.path.abspath(__file__)), "result
 TARGET_COL    = "abandono_hash"
 RANDOM_STATE  = 42
 TEST_SIZE     = 0.20
-CV_FOLDS      = 3          # 3-fold CV
-N_ITER        = 3          # random search iterations per model
-TRAIN_SAMPLE  = 10_000    # stratified rows for training
+CV_FOLDS      = 5          # 5-fold CV (matches proposal)
+N_ITER        = 5          # random search iterations per model
+TRAIN_SAMPLE  = 10_000     # stratified rows for training
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -246,6 +247,18 @@ def build_configs():
             },
             cv,
         ),
+        (
+            "SVM",
+            Pipeline([
+                ("scaler", StandardScaler()),
+                ("clf", LinearSVC(
+                    class_weight="balanced", max_iter=2000,
+                    dual=False, random_state=RANDOM_STATE
+                )),
+            ]),
+            {"clf__C": [0.01, 0.1, 1.0, 10.0]},
+            cv,
+        ),
     ]
 
 
@@ -255,15 +268,20 @@ def build_configs():
 def train_models(configs, X_train, y_train):
     trained = {}
 
-    # --- Tuned models (RandomizedSearchCV) ---
+    # --- All models tuned via RandomizedSearchCV (5-fold) ---
     for name, pipe, param_dist, cv in configs:
         print(f"\n{'─'*50}")
         print(f"  Training: {name}")
         print(f"{'─'*50}")
+        # Cap n_iter at the size of the parameter grid so we don't oversample
+        n_combos = 1
+        for v in param_dist.values():
+            n_combos *= len(v)
+        n_iter = min(N_ITER, n_combos)
         search = RandomizedSearchCV(
             estimator=pipe,
             param_distributions=param_dist,
-            n_iter=N_ITER,
+            n_iter=n_iter,
             cv=cv,
             scoring="f1_macro",
             n_jobs=-1,
@@ -275,21 +293,6 @@ def train_models(configs, X_train, y_train):
         print(f"  Best params : {search.best_params_}")
         print(f"  Best CV F1  : {search.best_score_:.4f}")
         trained[name] = search.best_estimator_
-
-    # --- SVM: single fit with fixed C=1.0 (no CV search — too slow otherwise) ---
-    print(f"\n{'─'*50}")
-    print(f"  Training: SVM  (fixed C=1.0, no grid search)")
-    print(f"{'─'*50}")
-    svm_pipe = Pipeline([
-        ("scaler", StandardScaler()),
-        ("clf", LinearSVC(
-            C=1.0, class_weight="balanced",
-            max_iter=1000, dual=False, random_state=RANDOM_STATE
-        )),
-    ])
-    svm_pipe.fit(X_train, y_train)
-    trained["SVM"] = svm_pipe
-    print(f"  Done.")
 
     return trained
 

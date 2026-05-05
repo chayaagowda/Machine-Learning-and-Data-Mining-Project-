@@ -1,0 +1,21 @@
+antecedents_str,consequents_str,support,confidence,lift
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_events=Low",0.0582,0.6982,2.6491
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_visits=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_events=Low",0.0581,0.6982,2.649
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_events=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP",0.0582,0.7,2.6489
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_events=Low, total_pft_visits=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP",0.0581,0.7,2.6488
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_visits=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_assignment_submissions=Low, total_pft_events=Low",0.058,0.6972,2.6486
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_events=Low, total_pft_visits=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_assignment_submissions=Low",0.058,0.6991,2.6486
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_events=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_visits=Low",0.0581,0.6988,2.6479
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_assignment_submissions=Low, total_pft_visits=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_events=Low",0.058,0.6979,2.6479
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_assignment_submissions=Low, total_pft_events=Low",0.0581,0.697,2.6478
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_events=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_assignment_submissions=Low",0.0581,0.6988,2.6477
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_assignment_submissions=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_events=Low",0.0581,0.6978,2.6477
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_assignment_submissions=Low, total_pft_events=Low, total_pft_visits=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP",0.058,0.6997,2.6477
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_assignment_submissions=Low, total_pft_events=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP",0.0581,0.6997,2.6475
+"dedicacion=TC, desplazado_hash=A, estudios_m_hash=L, nota10_hash=High","Dropout=No, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_events=Low",0.0582,0.7028,2.6475
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_assignment_submissions=Low, total_pft_events=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_visits=Low",0.058,0.6987,2.6475
+"dedicacion=TC, desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_visits=Low","Dropout=No, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_events=Low",0.0581,0.7027,2.6474
+"dedicacion=TC, desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_events=Low","Dropout=No, estudios_p_hash=L, tipo_ingreso=NAP",0.0582,0.7046,2.6474
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP",0.0583,0.6996,2.6473
+"dedicacion=TC, desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_events=Low, total_pft_visits=Low","Dropout=No, estudios_p_hash=L, tipo_ingreso=NAP",0.0581,0.7046,2.6473
+"desplazado_hash=A, estudios_m_hash=L, nota10_hash=High, total_pft_events=Low","Dropout=No, dedicacion=TC, estudios_p_hash=L, tipo_ingreso=NAP, total_pft_assignment_submissions=Low, total_pft_visits=Low",0.058,0.6979,2.6473

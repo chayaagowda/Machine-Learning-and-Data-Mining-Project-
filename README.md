@@ -16,13 +16,14 @@ The dataset used in this project is:
 
 **University Student Dropout: A Longitudinal Dataset of Demographic, Socioeconomic, and Academic Indicators**
 
-- 📍 Source: UCI / UPV (Universitat Politècnica de València, Spain)  
-- 📅 Published: October 2025  
-- 📦 Total Records: 464,739  
-- 👨‍🎓 Unique Students: 39,364  
-- 📚 Courses: 4,989  
-- 🎯 Features: 77 variables  
-- ⏳ Time Coverage: 3 academic years  
+- 📍 Source: Universitat Politècnica de València (UPV), Spain
+- 📰 Publication: MDPI *Data* (October 2025, CC BY 4.0)
+- 🔗 DOI: https://doi.org/10.3390/data10100162
+- 📦 Total Records: 464,739
+- 👨‍🎓 Unique Students: 39,364
+- 📚 Courses: 4,989 across 163 degree programs
+- 🎯 Features: 77 variables
+- ⏳ Time Coverage: 3 academic years (COVID-affected periods excluded)
 - 🗂️ Structure: One row represents a **student × course × academic year**
 
 ### 🎯 Target Variable
@@ -158,17 +159,36 @@ Generate human-readable rules that can support institutional decision-making.
 
 ## 🛠️ Project Structure
 
-docs/
-├── introduction.md 
-├── dataset_description.md 
-└── research_problems.md 
+```
+.
+├── README.md
+├── classification.py          # Person 2 — Supervised learning (LR / DT / RF / KNN / SVM)
+├── clustering.py              # Person 3 — K-Means + Agglomerative (Ward)
+├── association_rules.py       # Person 4 — Apriori + FP-Growth
+├── data/
+│   ├── dataset_2018_hash.csv
+│   ├── dataset_2021_hash.csv
+│   ├── dataset_2022_hash.csv
+│   └── dataset_info.txt
+├── docs/
+│   ├── introduction.md
+│   ├── dataset_description.md
+│   ├── research_problems.md
+│   └── final_insights.md      # Person 4 — recommendations + advisor playbook
+└── results/
+    ├── classification/        # confusion matrices + summary CSV + RF importances
+    ├── clustering/            # elbow, dendrogram, PCA scatter, profiles, summary
+    └── association_rules/     # frequent itemsets, top-20 by lift, dropout rules
+```
 
-data/
-└── dataset_info.txt 
+## ⚙️ How to run
 
-images/
-└── project_flow.png 
-
+```bash
+pip install -r requirements.txt   # or: pip install scikit-learn imbalanced-learn mlxtend matplotlib scipy pandas
+python classification.py
+python clustering.py
+python association_rules.py
+```
 
 ---
 

@@ -1,0 +1,3 @@
+Method,K,Silhouette,Davies_Bouldin,Purity,n_samples
+K-Means,2,0.2776,1.5127,0.9363,10000
+Agglomerative (Ward),2,0.258,1.6483,0.935,5000

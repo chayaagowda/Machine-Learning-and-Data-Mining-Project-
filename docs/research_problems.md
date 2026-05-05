@@ -80,11 +80,10 @@ Examples of clusters may include:
 
 Clustering helps institutions design personalized interventions for different student groups rather than using one solution for all students.
 
-### Possible Algorithms
+### Algorithms Used
 
-- K-Means Clustering  
-- Hierarchical Clustering  
-- DBSCAN  
+- K-Means Clustering (with optimal K chosen via Elbow Method + Silhouette Score)
+- Agglomerative Hierarchical Clustering (Ward linkage)
 
 ### Benefits
 
@@ -104,7 +103,12 @@ The third research problem is to identify combinations of factors that frequentl
 ### Type of Learning
 
 - Unsupervised Learning  
-- Pattern Mining / Association Rule Mining  
+- Pattern Mining / Association Rule Mining
+
+### Algorithms Used
+
+- Apriori (breadth-first candidate generation; reference implementation)
+- FP-Growth (FP-tree based; faster on the 464k-record dataset)
 
 ### Example Rules
 
